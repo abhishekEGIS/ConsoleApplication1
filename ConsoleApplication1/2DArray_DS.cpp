@@ -1,5 +1,4 @@
 #include "stdafx.h";
-a
 #include <map>
 #include <set>
 #include <list>
