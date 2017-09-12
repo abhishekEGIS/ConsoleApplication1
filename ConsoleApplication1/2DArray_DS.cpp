@@ -1,4 +1,10 @@
+/*
+It is better to manipulate array using array indexes then using expensive pointer opertions
+initialise maxSum to minimum possible value so that local sum will always be greater
+*/
+
 #include "stdafx.h";
+
 #include <map>
 #include <set>
 #include <list>
