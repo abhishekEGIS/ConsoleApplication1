@@ -35,5 +35,8 @@
     <ClCompile Include="DataStructures_Arrays_ArraysDS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2DArray_DS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
