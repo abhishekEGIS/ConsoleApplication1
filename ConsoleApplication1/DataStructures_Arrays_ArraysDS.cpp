@@ -1,3 +1,8 @@
+/*This is a file for reversing an array
+lessons learnt
+vector<int> arr(10) declare a vector instead of int arr[10]
+*/
+
 #include "stdafx.h";
 
 #include <map>
@@ -27,8 +32,7 @@ using namespace std;
 
 
 int main() {
-	//This is a commmit from Visual Studio
-	//This is second comment
+
 	int n;
 	cin >> n;
 	vector<int> arr(n);
