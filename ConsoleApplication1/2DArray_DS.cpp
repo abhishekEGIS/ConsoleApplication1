@@ -40,7 +40,7 @@ int main() {
 	for (int i = 0; i < 4; i++) {
 		for (int k = 0; k < 4; k++) {
 			sum = arr[i][k] + arr[i][k+1] + arr[i][k+2] 
-				+ arr[i+1][k+1] + arr[i+2][k] + arr[i+2][k+1] + arr[i+2][i+2];
+				+ arr[i+1][k+1] + arr[i+2][k] + arr[i+2][k+1] + arr[i+2][k+2];
 			if (sum >= maxSum) {
 				maxSum = sum;
 			}
