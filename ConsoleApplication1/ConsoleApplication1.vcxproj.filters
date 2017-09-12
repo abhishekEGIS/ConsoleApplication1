@@ -38,5 +38,8 @@
     <ClCompile Include="2DArray_DS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LeftRotation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

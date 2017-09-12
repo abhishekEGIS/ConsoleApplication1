@@ -31,7 +31,7 @@ vector<int> arr(10) declare a vector instead of int arr[10]
 using namespace std;
 
 
-int main() {
+int PrintArray() {
 
 	int n;
 	cin >> n;

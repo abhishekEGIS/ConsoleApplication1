@@ -26,7 +26,7 @@
 using namespace std;
 
 
-int main() {
+int HourGlassSum() {
 
 	int maxSum = -9999;
 	int sum;
