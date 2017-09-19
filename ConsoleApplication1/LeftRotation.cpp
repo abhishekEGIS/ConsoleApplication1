@@ -12,7 +12,7 @@ now swap on split point
 #include <algorithm>
 using namespace std;
 
-int main() {
+int LeftRotation() {
 	/* Enter your code here. Read input from STDIN. Print output to STDOUT */
 	int lengthArray;
 	int rotation;
