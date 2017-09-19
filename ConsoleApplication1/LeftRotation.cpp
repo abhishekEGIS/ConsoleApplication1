@@ -1,5 +1,10 @@
-#include "stdafx.h";
+/*
+For left rotation. Get to the rotation point and create a split.
+now swap on split point
+*/
 
+
+#include "stdafx.h";
 #include <cmath>
 #include <cstdio>
 #include <vector>
@@ -7,44 +12,51 @@
 #include <algorithm>
 using namespace std;
 
-
 int main() {
 	/* Enter your code here. Read input from STDIN. Print output to STDOUT */
 	int lengthArray;
-	int leftRotation;
-	
+	int rotation;
+	int laterArrayLength, earlierArrayLength;
+
 	cin >> lengthArray;
-	cin >> leftRotation;
+	cin >> rotation;
+	// rotation = lengthArray - rotation; //simply uncomment this for right rotation
+	// basically right roation is left rotation at a different piviot point
+	laterArrayLength = lengthArray - rotation;
+	earlierArrayLength = rotation;
 
 	vector<int> arr(lengthArray);
-	vector<int> leftArray(lengthArray);
-	vector<int> rightArray(lengthArray);
+	vector<int> earlierArray(earlierArrayLength);
+	vector<int> laterArray(laterArrayLength);
+	vector<int> newArr(lengthArray);
+
 
 	for (int i = 0; i < lengthArray; i++) {
-		cin >> arr[i] ;
+		cin >> arr[i];
 	}
 
-	for (int i = 0; i < leftRotation; i++) {
-		rightArray[i] = arr[i];
+	for (int i = 0; i < rotation; i++) {
+		earlierArray[i] = arr[i];
 	}
 
-	for (int i = leftRotation, k=0; i < lengthArray; i++,k++) {
-		leftArray[k] = arr[i];
+	for (int i = rotation, k = 0; i < lengthArray; i++, k++) {
+		laterArray[k] = arr[i];
 	}
 
-	for (int i = 0; i<lengthArray-leftRotation; i++)
+	for (int i = 0; i<laterArrayLength; i++)
 	{
-		arr[i] = leftArray[i];
+		newArr[i] = laterArray[i];
 	}
-	
-	for (int i = 0, k=leftRotation+1; i<leftRotation; i++,k++)
+
+	for (int i = 0, k = lengthArray - rotation; i<earlierArrayLength; i++, k++)
 	{
-		arr[k] = rightArray[i];
+		newArr[k] = earlierArray[i];
 	}
-	
+
 	for (int i = 0; i < lengthArray; i++) {
-		cout << arr[i];
+		cout << newArr[i];
+		cout << " ";
 	}
 
-		return 0;
+	return 0;
 }
