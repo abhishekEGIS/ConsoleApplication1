@@ -1,3 +1,10 @@
+/*
+maps in c++ is inside std library
+map<string,int> m;
+m[key]=value
+cout <<m[key];
+*/
+
 #include "stdafx.h";
 
 #include <map>
