@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2DArray_DS.cpp" />
+    <ClCompile Include="AlgorithmicCrush.cpp" />
     <ClCompile Include="ConsoleApplication1.cpp" />
     <ClCompile Include="DataStructures_Arrays_ArraysDS.cpp" />
     <ClCompile Include="LeftRotation.cpp" />

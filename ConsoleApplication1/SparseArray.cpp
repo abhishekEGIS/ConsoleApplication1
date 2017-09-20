@@ -14,7 +14,7 @@ cout <<m[key];
 #include <vector>
 using namespace std;
 
-int main(int argc, char **argv)
+int SparseArray(int argc, char **argv)
 {
 
 	int numberOfStrings;

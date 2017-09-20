@@ -44,5 +44,8 @@
     <ClCompile Include="SparseArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AlgorithmicCrush.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
