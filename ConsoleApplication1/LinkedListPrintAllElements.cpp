@@ -21,7 +21,7 @@ struct Node
 
 void Print(Node *head);
 
-int main()
+int LinkedList()
 {
 	Node *head = new Node;
 	head->data = 10;

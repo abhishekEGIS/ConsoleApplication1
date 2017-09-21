@@ -156,6 +156,7 @@
     <ClCompile Include="DataStructures_Arrays_ArraysDS.cpp" />
     <ClCompile Include="LeftRotation.cpp" />
     <ClCompile Include="LinkedListPrintAllElements.cpp" />
+    <ClCompile Include="MaximumSubarray.cpp" />
     <ClCompile Include="SparseArray.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
