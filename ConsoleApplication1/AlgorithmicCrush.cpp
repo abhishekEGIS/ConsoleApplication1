@@ -24,7 +24,7 @@ will not get them too
 using namespace std;
 
 typedef long long ll;
-int main() {
+int Crush() {
 	ll N, K, p, q, sum, i, j, max = 0, x = 0;
 
 	cin >> N >> K;
