@@ -36,8 +36,10 @@ struct Node
 Node *InsertAtTail(Node *head, int data);
 Node *InsertAtHead(Node *head, int data);
 Node *InsertAtPosition(Node *head, int data, int position);
+Node* Delete(Node *head, int position);
+void PrintAllElements(Node *head);
 
-int InsertAtAllPositions()
+int main()
 {
 
 	Node *newNode1 = new Node;
@@ -60,25 +62,53 @@ int InsertAtAllPositions()
 	newNode4->data = 6;
 	newNode4->next = NULL;
 
-
-	while (temp != NULL)
-	{
-		cout << temp->data << endl;
-		temp = temp->next;
-	}
-
-
+	PrintAllElements(head);
+	
 	InsertAtPosition(head, 17, 2);
-
-	temp = head;
-	while (temp != NULL)
-	{
-		cout << temp->data << endl;
-		temp = temp->next;
-	}
+	
+	PrintAllElements(head);
+	
+	Delete(head, 3);
+	
+	PrintAllElements(head);
 
 	return 0;
 }
+
+void PrintAllElements(Node *head)
+{
+	Node *temp = head;
+	while (temp != NULL)
+	{
+		cout << temp->data << " ";
+		temp = temp->next;
+	}
+	cout << endl << endl;
+}
+
+Node* DeleteAtLocation(Node *head, int position)
+{
+	Node *temp = head;
+	Node *tempNext;
+
+	if (temp == NULL) {
+		return head;
+	}
+
+	while (position > 1) {
+		temp = temp->next;
+		position--;
+	}
+
+
+	tempNext = temp->next;
+
+
+	temp->next = tempNext->next;
+
+	return head;
+}
+
 
 Node *InsertAtTail(Node *head, int data)
 {
