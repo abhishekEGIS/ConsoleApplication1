@@ -19,19 +19,19 @@ struct Node
 	struct Node *next;
 };
 
-void Print(Node *head);
+void PrintElements(Node *head);
 
 int LinkedList()
 {
 	Node *head = new Node;
 	head->data = 10;
 	head->next = NULL;
-	Print(head);
+	PrintElements(head);
 
 	return 0;
 }
 
-void Print(Node *head)
+void PrintElements(Node *head)
 {
 	while (head != NULL)
 	{

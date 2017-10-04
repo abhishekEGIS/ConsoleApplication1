@@ -38,7 +38,7 @@ between current item as stand alone or current item+max array before
 
 using namespace std;
 
-int main()
+int main2()
 {
 	int max = INT_MIN;
 	int arr[7] = { 9,-10,10,-7,6,-2,-7 };
