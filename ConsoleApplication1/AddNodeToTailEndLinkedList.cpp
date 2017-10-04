@@ -36,8 +36,12 @@ struct Node
 Node *InsertAtTail(Node *head, int data);
 Node *InsertAtHead(Node *head, int data);
 Node *InsertAtPosition(Node *head, int data, int position);
-Node* Delete(Node *head, int position);
+Node* DeleteAtLocation(Node *head, int position);
 void PrintAllElements(Node *head);
+void PrintAllElementsReverse(Node *head);
+void ReverseLinkedList(Node *head);
+
+
 
 int main()
 {
@@ -68,7 +72,14 @@ int main()
 	
 	PrintAllElements(head);
 	
-	Delete(head, 3);
+	DeleteAtLocation(head, 3);
+	
+	PrintAllElements(head);
+
+	PrintAllElementsReverse(head);
+	cout << endl << endl;
+
+	ReverseLinkedList(head);
 	
 	PrintAllElements(head);
 
@@ -85,6 +96,31 @@ void PrintAllElements(Node *head)
 	}
 	cout << endl << endl;
 }
+
+
+void PrintAllElementsReverse(Node *head)
+{
+	Node *temp = head;
+	if (temp->next != NULL)
+	{
+		PrintAllElementsReverse(temp->next);
+	}
+	cout << temp->data<< " ";
+}
+
+
+void ReverseLinkedList(Node *head)
+{
+	Node *curr = NULL;
+	if (head->next != NULL)
+	{
+		curr = head;
+		ReverseLinkedList(head->next);
+	}
+	head->next = curr;
+}
+
+
 
 Node* DeleteAtLocation(Node *head, int position)
 {
