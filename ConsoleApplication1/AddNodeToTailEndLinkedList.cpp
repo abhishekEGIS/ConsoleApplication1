@@ -27,14 +27,6 @@
 
 using namespace std;
 
-
-
-/*
-Node *InsertAtTail(Node *head, int data);
-Node *InsertAtHead(Node *head, int data);
-Node *InsertAtPosition(Node *head, int data,int position);
-*/
-
 struct Node
 {
 	int data;
@@ -45,7 +37,7 @@ Node *InsertAtTail(Node *head, int data);
 Node *InsertAtHead(Node *head, int data);
 Node *InsertAtPosition(Node *head, int data, int position);
 
-int main()
+int InsertAtAllPositions()
 {
 
 	Node *newNode1 = new Node;
